@@ -1,5 +1,7 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
+import Button from 'primevue/button';
+import Knob from 'primevue/knob';
 
 defineProps({
     canLogin: {
@@ -28,6 +30,7 @@ function handleImageError() {
 
 <template>
     <Head title="Welcome" />
+
     <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
         <img id="background" class="absolute -left-20 top-0 max-w-[877px]" src="https://laravel.com/assets/img/welcome/background.svg" />
         <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
@@ -106,6 +109,8 @@ function handleImageError() {
                                 <svg class="size-6 shrink-0 stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
                             </div>
                         </a>
+                        <Button label="Profile" icon="pi pi-user" />
+                      
 
                         <a
                             href="https://laracasts.com"
